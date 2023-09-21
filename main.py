@@ -11,6 +11,8 @@ latitude = data_iss["iss_position"]["latitude"]
 
 iss_position_tuple = (longitude, latitude)
 print(f"The international space station coordinates at the current moment is :{iss_position_tuple}")
+
+
 # ------------------- USING API TO GET THE SUNRISE AND SUNSET TIME FOR LONDON(WITH COORDINATES) -------------------
 LAT = 51.5072
 LON = 0.1276
