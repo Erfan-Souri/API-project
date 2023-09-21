@@ -1,5 +1,4 @@
 import requests
-import datetime as dt
 
 # -------------------- USING API TO LOCATE THE INTERNATIONAL SPACE STATION (ISS) -----------------
 response = requests.get(url="http://api.open-notify.org/iss-now.json")
