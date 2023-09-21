@@ -17,13 +17,13 @@ print(f"The international space station coordinates at the current moment is :{i
 LAT = 51.5072
 LON = 0.1276
 
-london_Coordinates = {
+london_coordinates = {
     "lat": LAT,
     "lng": LON,
     "formatted": 0,
 }
 
-response = requests.get(url="https://api.sunrise-sunset.org/json", params=london_Coordinates)
+response = requests.get(url="https://api.sunrise-sunset.org/json", params=london_coordinates)
 response.raise_for_status()
 data_sunrise_sunset = response.json()
 sunrise = int(data_sunrise_sunset["results"]["sunrise"].split("T")[1].split(":")[0])
